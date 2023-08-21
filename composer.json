@@ -13,20 +13,36 @@
     }
   ],
   "require": {
-    "silverstripe/cms": "^4.4",
-    "silverstripe/graphql": "^4",
-    "silverstripe/cms-events": "*",
-    "unclecheese/display-logic": "~2.0",
+    "silverstripe/cms": "^5",
+    "silverstripe/graphql": "^5",
+    "silverstripe/cms-events": "dev-master",
+    "unclecheese/display-logic": "~3.0",
     "sminnee/silverstripe-apikey": "dev-master",
-    "symbiote/silverstripe-grouped-cms-menu": "^4",
-    "firebase/php-jwt": "^5.4",
-    "guzzlehttp/guzzle": "^7.0"
+    "symbiote/silverstripe-grouped-cms-menu": "dev-master",
+    "firebase/php-jwt": "^6.8",
+    "guzzlehttp/guzzle": "^7.7"
   },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/firebranddevelopers/silverstripe-apikey.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/firebranddevelopers/silverstripe-cms-events.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "SilverStripe\\Headless\\": "src/"
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "silverstripe/vendor-plugin": true
+    }
+  }
 }
