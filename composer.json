@@ -22,16 +22,6 @@
     "firebase/php-jwt": "^6.8",
     "guzzlehttp/guzzle": "^7.7"
   },
-  "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/firebranddevelopers/silverstripe-apikey.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/firebranddevelopers/silverstripe-cms-events.git"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "SilverStripe\\Headless\\": "src/"
